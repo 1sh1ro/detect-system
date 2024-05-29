@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urine Indicator Intelligent Detection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 1200px; /* 限制最大宽度 */
+            padding: 10px;
+        }
+
+        .left, .right {
+            flex: 1; /* 让左右两栏自适应 */
+            padding: 10px;
+        }
+
+        .main {
+            flex: 4; /* 让中间栏更宽 */
+            padding: 10px;
+        }
+
+        .author {
+            margin-left: auto;
+        }
+        /* 样式摘要 */
+        .section {
+            margin-bottom: 20px;
+            border: 1px solid #eaeaea;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        /* 优化布局，在小屏幕设备上让内容堆叠而不是并排 */
+        @media (max-width: 768px) {
+            .left, .right {
+                flex: 100%;
+            }
+        }
+        .about-section, .how-to-use, .faq-section, .feedback-section, .contact-section {
+            margin-bottom: 20px;
+            border: 1px solid #eaeaea;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        h1, h2 {
+            text-align: center;
+            color: #333;
+            font-family: 'Verdana', sans-serif;
+        }
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 36px;
+            color: #333;
+            font-weight: bold;
+        }
+        .upload-section, .result-section, .explanation {
+            margin: 20px 0;
+        }
+        
+        label, p {
+            color: #333;
+        }
+        
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #008cba;
+            color: white;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0073a1;
+        }
+        
+        .note {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>尿液指标智能检测识别</h1>
+        <p class="explanation">
+            本工具使用先进的图像处理技术，能够快速准确地从尿液样本图片中识别和分析关键健康指标。
+            只需上传一张清晰的尿液试纸图片，即可获得详尽的分析报告，包括但不限于pH值、蛋白质、糖类等多项指标。
+        </p>
+        <div class="left">
+            <!-- 左侧栏内容 -->
+            <div class="section about-section">
+                <h2>关于我们</h2>
+                <p>天津大学尿液指标智能检测识别大创项目</p>
+            </div>
+            <div class="section contact-section">
+                <h2>联系我们</h2>
+                <ul>
+                    <li>邮箱: tju.edu.cn</li>
+                    <li>电话: +123456789</li>
+                    <li>指导老师: 汤善江</li>
+                    <!-- 附加联系信息 -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <!-- 中间栏内容 -->
+            <div class="section how-to-use">
+                <h2>如何使用</h2>
+                <ol>
+                    <li>准备尿液试纸。</li>
+                    <li>确保试纸照片清晰可见。</li>
+                    <li>上传照片等待分析结果。</li>
+                </ol>
+            </div>
+            <div class="section faq-section">
+                <h2>常见问题</h2>
+                <ul>
+                    <li>Q:检测结果准确吗？</li>
+                    <li>A:会有一定误差，误差主要在像素等方面</li>
+                    <li>Q:隐私会泄露吗？</li>
+                    <li>A:绝对不会泄露，所有数据都只在本机保存</li>
+                </ul>
+                <!-- 在这里添加FAQ内容 -->
+            </div>
+        </div>
+
+        
+        
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="upload-section">
+                <h2>上传尿液试纸图片</h2>
+                <label for="file">选择图片文件：</label>
+                <input type="file" name="file" id="file" accept="image/*" required>
+                <button type="submit">开始检测</button>
+                <figure class="figure">
+                    <img src="https://p19-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/f6fd827e99174dfa9c826ab93c04b723.png~tplv-0es2k971ck-image.png?rk3s=18ea6f23&x-expires=1748537739&x-signature=rfR1r50G1wWDDuG6jvpoAqNvz8E%3D"  width="400" height="250" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+                    <figcaption class="figure-caption"></figcaption>
+                  </figure>
+            </div>
+        </form>
+        
+        <p class="note">
+            注意：此工具仅供参考，不能代替专业的医疗诊断。如果您的尿液指标异常，请及时咨询医疗专家。                      
+        </p>
+        <div class="author">
+            author：@1sh1ro                      
+        </div>
+    
+        
+    </div>
+    
+</body>
+</html>
