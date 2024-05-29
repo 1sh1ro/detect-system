@@ -37,8 +37,8 @@ README.md
 
 1. **Clone the repository**:
     ```sh
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/1sh1ro/detect-system.git
+    cd detect-system
     ```
 
 2. **Create a virtual environment** (optional but recommended):
